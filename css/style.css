@@ -1,0 +1,311 @@
+
+/****** GENERAL STYLING *******/
+
+@font-face {
+	font-family: 'Focus Regular';
+	src: local("☺"),
+		url('fonts/focus_regular/focus-regular-webfont.woff2') format('woff2'),
+        url('fonts/focus_regular/focus-regular-webfont.woff') format('woff'),
+		url('fonts/focus_regular/focus-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Focus Medium';
+	src: local("☺"),
+		url('fonts/focus_medium/focus-medium-webfont.woff2') format('woff2'),
+        url('fonts/focus_medium/focus-medium-webfont.woff') format('woff'),
+		url('fonts/focus_medium/focus-medium.ttf') format('truetype');
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Focus Regular';	
+	font-size: 1em;
+	line-height: 1.4;
+	background: url('../images/sparkle.png') rgb(255, 195, 0);
+	background-size: 200px;
+	text-align: center;
+	color: #fff;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/********* LAYOUT ***********/
+
+.main-nav a,
+.learn-more a {
+	display: block;
+}
+
+.main-nav li {
+	margin: 10px auto;
+	width: 80%;
+	height: 30px;
+	padding-top: 7px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 90px;
+	flex: 1;
+}
+
+.main-intro {
+	margin: 0 auto;
+	max-width: 410px;
+}
+
+.main-footer {
+	margin-top: 30px;
+}
+
+/********* STYLING ***********/
+
+.main-nav {
+	display: none;
+}
+
+.main-greeting,
+.main-intro p {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.main-greeting {
+	font-family: 'Focus Medium';
+}
+
+.main-intro {
+	color: rgb(126, 131, 140);
+}
+
+.learn-more {
+	margin: 0 auto;
+	max-width: 150px;
+	font-family: 'Focus Medium';
+	border: 3px solid #fff;
+	border-radius: 7px;
+}
+
+.h1-margin {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.copyright {
+	color: rgb(126, 131, 140);
+	font-size: .5em;
+}
+
+
+/********* SLICK STYLING ***********/
+
+.slick-dots {
+	bottom: -35px;
+}
+
+.slick-dots li button:before {
+	font-size: 16px;
+	color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #fff;
+}
+
+.center {
+	display: none;
+}
+
+/********* SLICK NAV STYLING *********/
+
+.slicknav_nav a {
+	text-transform: uppercase;
+	padding-top: 15px;
+}
+
+.slicknav_nav li {
+	height: 50px;
+}
+
+.slicknav_nav li .separator {
+	display: none;
+}
+
+.slicknav_menu {
+	display: block;
+	background: rgb(255, 195, 0);
+	text-align: center;
+	width: 100%;
+	background: url('../images/sparkle.png') transparent;
+	background-size: 200px;
+}
+
+.slicknav_btn {
+	display: inline-block;
+	float: none;
+	text-align: center;
+	background: transparent;
+	text-shadow: none;
+	font-size: 1.8em;
+}
+
+.slicknav_menu .slicknav_menutxt {
+	text-shadow: none;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+	width: 1.825em;
+	height: .3em;
+	border-radius: 3px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.slicknav_menu .slicknav_icon {
+	margin-left: -.6em;
+	margin-top: -.1em;
+}
+
+.slicknav_nav a:hover {
+	background: #fff;
+	color: rgb(126, 131, 140);
+}
+ 
+/********* ABOUT PAGE *********/
+
+.avatar img {
+	width: 200px;
+	border: 5px solid #fff;
+	border-radius: 7px;
+}
+
+.logo {
+	width: 100px;
+	fill: #fff;
+}
+
+.about-bground {
+	background: url('../images/sparkle.png') rgb(233, 161, 185);
+	background-size: 200px;
+}
+
+/********* CV PAGE *********/
+
+.cv-bground {
+	background: url('../images/sparkle.png') rgb(2, 201, 201);
+	background-size: 200px;
+}
+
+/********* SKILLS PAGE *********/
+
+.skills-bground {
+	background: url('../images/sparkle.png') rgb(220, 220, 220);
+	background-size: 200px;
+}
+
+/********* CONTACT PAGE *********/
+
+.contact-bground {
+	background: url('../images/sparkle.png') rgb(194, 213, 63);
+	background-size: 200px;
+}
+
+/********* MEDIA QUERIES *********/
+
+@media (min-width: 720px) {
+
+	#mobile-nav {
+		display: none;
+	}
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-nav li {
+		margin: 10px 5px;
+	}
+
+	.main-nav a {
+		padding: 12.5px;
+	}
+
+	.active a {
+		color: rgb(126, 131, 140);
+	}
+
+}
+
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.name {
+		margin-left: 17.5px;
+	}
+
+	.container {
+		margin-top: 14em;
+	}
+
+
+	.rotate {
+		-webkit-transition: transform .9s;
+		-moz-transition: transform .9s;
+		-ms-transition: transform .9s;
+		transition: transform .9s;
+	}
+
+	.rotate:hover {
+		-webkit-transform: rotate(20deg);
+		-moz-transform: rotate(20deg);
+		-ms-transform: rotate(20deg);
+		transform: rotate(20deg);
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
