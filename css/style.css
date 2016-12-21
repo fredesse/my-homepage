@@ -277,6 +277,7 @@ a.svg:after {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 2.5em;
+	margin-bottom: 4em;
 }
 
 .skill {
@@ -294,6 +295,19 @@ a.svg:after {
 .contact-bground {
 	background: url('../images/sparkle.png') rgb(194, 213, 63);
 	background-size: 200px;
+}
+
+.social-icons {
+	margin-top: 1.5em;
+	width: 80px;
+}
+
+.contact-mail-sm {
+	margin: 0 auto;
+}
+
+.contact-mail-lg {
+	display: none;
 }
 
 /********* MEDIA QUERIES *********/
@@ -347,6 +361,13 @@ a.svg:after {
 		margin-right: .6em;
 	}
 
+	.contact-mail-sm {
+		display: none;
+	}
+
+	.contact-mail-lg {
+		display: block;
+	}
 
 }
 
@@ -402,6 +423,12 @@ a.svg:after {
 
 	.skill {
 		max-width: 180px;
+	}
+
+	.contact-mail-lg,
+	.contact-intro {
+		margin: 0 auto;
+		max-width: 900px;
 	}
 
 
