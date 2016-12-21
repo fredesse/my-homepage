@@ -62,10 +62,10 @@
 	<rect x="43" y="19.5" style="fill:#D75A4A;" width="8" height="8"/>
 	<text x="3" y="16" font-family="Focus Regular" font-size="2" style="fill: #7E838C;">fredy-edwin esse</text>
 	<text x="3" y="20" font-family="Focus Regular" font-size="2" style="letter-spacing: -0.1; fill: #7E838C;">e-mail: </text>
-	<text x="11" y="20" font-family="Focus Regular" font-size="2" style="letter-spacing: -0.1; fill: #fff;"><a href="mailto:fred.esse@gmail.com">fred. esse@gmail. com</a></text>
+	<text x="11" y="20" font-family="Focus Regular" font-size="2" style="letter-spacing: -0.1; fill: #fff;"><a xlink:href="mailto:fred.esse@gmail.com">fred. esse@gmail. com</a></text>
 	<text x="3" y="24" font-family="Focus Regular" font-size="2" style="letter-spacing: -0.1; fill: #7E838C;">skype: edwin. esse</text>
 	<g>
-		<a href="https://www.linkedin.com/in/fredy-edwin-esse-a4aa99132?trk=hp-identity-name" target="_blank">
+		<a xlink:href="https://www.linkedin.com/in/fredy-edwin-esse-a4aa99132?trk=hp-identity-name" target="_blank">
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="3px" y="36px"
 	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
 	<g>
@@ -113,7 +113,7 @@
 	</a>
 	</g>
 	<g>
-	<a href="https://github.com/fredesse" target="_blank">
+	<a xlink:href="https://github.com/fredesse" target="_blank">
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="13px" y="36px"
 	 viewBox="0 0 2500 2500" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
 <g>
@@ -162,7 +162,7 @@
 </a>
 	</g>
 	<g>
-		<a href="https://twitter.com/fe_esse" target="_blank">
+		<a xlink:href="https://twitter.com/fe_esse" target="_blank">
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="23px" y="36px"
 	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
 <g>
