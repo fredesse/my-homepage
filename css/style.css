@@ -22,7 +22,7 @@ html {
 }
 
 body {
-	font-family: 'Focus Regular';	
+	font-family: 'Focus Regular', Lucida Grande, Helvetica;	
 	font-size: 1em;
 	line-height: 2;
 	background: url('../images/sparkle.png') rgb(255, 195, 0);
@@ -107,8 +107,9 @@ a.svg:after {
 	text-transform: uppercase;
 }
 
-.main-greeting {
-	font-family: 'Focus Medium';
+.main-greeting,
+.learn-more {
+	font-family: 'Focus Medium', Lucida Grande, Helvetica;
 }
 
 .main-intro {
@@ -118,7 +119,6 @@ a.svg:after {
 .learn-more {
 	margin: 0 auto;
 	max-width: 150px;
-	font-family: 'Focus Medium';
 }
 
 .h1-margin {
@@ -302,7 +302,7 @@ a.svg:after {
 /********* CONTACT PAGE *********/
 
 .contact-bground {
-	background: url('../images/sparkle.png') rgb(194, 213, 63);
+	background: url('../images/sparkle.png') #03A9F4;
 	background-size: 200px;
 }
 
