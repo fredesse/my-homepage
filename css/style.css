@@ -1,6 +1,13 @@
 
 /****** GENERAL STYLING *******/
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @font-face {
 	font-family: 'Focus Regular';
 	src: local("☺"),
@@ -302,7 +309,7 @@ a.svg:after {
 /********* CONTACT PAGE *********/
 
 .contact-bground {
-	background: url('../images/sparkle.png') #03A9F4;
+	background: url('../images/sparkle.png') #03A0F4;
 	background-size: 200px;
 }
 
@@ -449,6 +456,10 @@ a.svg:after {
 	.contact-mail-lg,
 	.contact-intro {
 		margin: 0 auto;
+		/*max-width: 900px;*/
+	}
+
+	.mail-max-width {
 		max-width: 900px;
 	}
 
