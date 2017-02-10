@@ -1,0 +1,99 @@
+
+
+.wrapper {
+	@include desktop {
+		max-width: 1150px;
+		margin: 0 auto;
+		width: 95%;
+	}
+}
+
+.container {
+	@extend %clearfix;
+
+	@include tablet {
+		margin-left: 1em;
+		margin-right: 1em;
+		padding-top: 2em;
+	}
+
+	@include desktop {
+		margin: 0 auto;
+	}
+}
+
+.content {
+	@extend %clearfix;
+
+	p {
+		@include padding(1em, 1em);
+		padding-bottom: 2em;
+	}
+
+	@include tablet {
+		@include padding(2em, 2em);
+		float: left;
+		width: 50%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	@include desktop {
+		display: inline-block;
+		width: 33.33%
+	}
+}
+
+.portfolio {
+	@extend %centered;
+	@extend %clearfix;
+
+	h2 {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	@include tablet {
+		margin: 0 auto;
+	}
+}
+
+.portfolio,
+.main-nav a,
+.skills {
+	background-color: $color-con-background;
+}
+
+.stack-two {
+	@include tablet {
+		clear: both;
+	}
+
+	@include desktop {
+		clear: none;
+	}
+}
+
+.stack-three {
+	@include desktop {
+		clear: both;
+	}
+}
+
+.last-content {
+	@include padding(1em, 1em);
+	padding-bottom: 2em;
+
+	@include tablet {
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: 2em;
+	}
+
+	@include desktop {
+		@include padding(2em, 2em);
+		display: inline-block;
+		width: 33.33%;
+		margin-top: 1em;
+	}
+}

@@ -1,0 +1,69 @@
+/* Base Styles -------------------- */ 
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $stack-roboto;
+	background-color: $color-body-background;
+	color: $color-text-prim;
+	font-weight: $fw-light;
+}
+
+p {
+	font-size: $f-size-body;
+	line-height: 1.5;
+	color: $color-text-base;
+}
+
+h2,
+a {
+	color: $color-text-prim;
+	font-weight: $fw-normal;
+}
+
+h2 {
+	@extend %uppercase;
+}
+
+h3 {
+	font-weight: $fw-light;
+	font-size: $f-size-heading;
+}
+
+ul,
+ol {
+	margin: 2em 0;
+	list-style-type: none;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a {
+
+	&:link {
+	text-decoration: none;
+	}
+
+	&:visited {
+	text-decoration: none;
+	color: $color-text-prim;
+	}
+
+	&:hover {
+		color: $color-link-hover;
+	}
+	
+}
+
+

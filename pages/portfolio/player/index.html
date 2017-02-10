@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Interactive video player</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="video-container">
+			<video id="video">
+				<source src="video/video.mp4" type="video/mp4">
+				<source src="video/video.ogg" type="video/ogg">
+				<track label="Internet inside our house" kind="subtitles" srclang="en" src="video/captions.vtt" default>
+				<p>Your browser doesn't support HTML5 video.</p>
+			</video>
+			<div class="seekbar">
+				<progress id='progress-bar' max='100' value='0'>0% played</progress>
+			</div>
+			<div class="video-controls">
+				<button type="button" id="playpause" class="play"></button>
+				<div class="show-time">
+					<span id="current-time">00:00</span> / <span id="total-time">00:01</span>
+				</div>
+				<div class="controls-right">
+		    		<button type="button" id="mute" class="unmute"></button>
+		    		<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+		    		<button type="button" id="full-screen" class="fullscreen"></button>
+		    		<button type="button" id="exit-full-screen" class="fullscreen"></button>
+				</div>
+			</div>	
+		</div>
+		<div class="p-container">
+			<p><span id="highlight1">Now that we've looked at the architecture
+			of the internet, let's see how you might</span><span id="highlight2"> connect your personal devices to
+			the internet inside your house.</span></p>
+			<p><span id="highlight3">Well there are many ways to
+			connect to the internet, and</span><span id="highlight4"> most often people connect wirelessly.</span></p>
+			<p><span id="highlight5">Let's look at an example of how
+			you can connect to the internet.</span></p>
+			<p><span id="highlight6">If you live in a city or a town,
+			you probably have a coaxial cable for</span><span id="highlight7"> cable Internet, or a phone line if you
+			have DSL, running to the outside of</span><span id="highlight8"> your house, that connects you to
+			the Internet Service Provider, or ISP.</span></p>
+			<p><span id="highlight9">If you live far out in the country,
+			you'll more likely have</span><span id="highlight10"> a dish outside your house, connecting
+			you wirelessly to your closest ISP, or</span><span id="highlight11"> you might also use the telephone system.</span></p>
+			<p><span id="highlight12">Whether a wire comes straight from
+			the ISP hookup outside your house, or</span><span id="highlight13"> it travels over radio
+			waves from your roof,</span><span id="highlight14"> the first stop a wire will make once
+			inside your house, is at your modem.</span></p>
+			<p><span id="highlight15">A modem is what connects the internet
+			to your network at home.</span></p>
+			<p><span id="highlight16">A few common residential modems are DSL or</span></p>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

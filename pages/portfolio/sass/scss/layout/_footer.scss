@@ -1,0 +1,46 @@
+
+.main-footer {
+	@extend %clearfix;
+	margin: 0 1em;
+	border-top: 2px solid rgba(220, 220, 220, 1);
+	padding-top: 1em;
+	padding-bottom: 1em;
+} 
+
+.footer {
+	&-title {
+		float: left;
+		padding-left: 0;
+		font-size: $f-size-footer;
+		text-transform: capitalize;
+	}
+
+	&-nav {
+		display: none;
+		
+		@include tablet {
+			display: inline-block;
+			float: right;
+			font-size: $f-size-footer;
+			margin-top: .83em;
+			text-transform: uppercase;
+		}
+	}
+
+	&-mobile {
+		@extend %uppercase;
+		float: right;
+		font-size: $f-size-footer;
+
+		@include tablet {
+			display: none;
+		}
+	}
+}
+
+@include tablet {
+	.footer-nav li {
+		display: inline-block;
+		margin-left: 2.5em;
+	}
+}

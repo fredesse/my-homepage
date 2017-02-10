@@ -1,0 +1,139 @@
+/* Survey page styles */
+
+.photo{
+  width: 100%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+}
+
+.newsletter{
+  text-align: center;
+}
+
+input[type="radio"] {
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border: none;
+  padding-top: 0;
+}
+
+.spacing {
+  margin-top: 2em;
+}
+
+.spacing1 {
+  margin-top: 30px;
+}
+
+.spacing2 {
+  margin-top: 3em;
+}
+
+.checkbox {
+  margin-left: .8em;
+}
+
+.form-headline {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+select {
+  text-transform: none;
+  height: 3em;
+  width: 100%;
+  max-width: 350px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: none;
+  height: 11em;
+  width: 100%;
+  max-width: 350px;
+  font-size: 1.2em;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.news-col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2em;
+}
+
+.news-col label {
+  text-align: left;
+  margin-bottom: .4em;
+  font-size: 1.1em;
+}
+
+.news-col input {
+  width: 100%;
+  height: 2.5em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+  padding: 5px 10px;
+}
+
+.newsletter button {
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.3em;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  background-color: #00D95F;
+  color: #2d2b30;
+}
+
+.desribe {
+  font-size: .8em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, rgb(242, 242, 242) 50%, white 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: inset 0px 0px 0px 5px #00D95F;
+  background-position: -100% 0;
+  outline: 0;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+
+  .spacing1 {
+    margin-top: 0;
+  }
+
+  fieldset {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+  }
+}

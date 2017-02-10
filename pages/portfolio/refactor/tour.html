@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
+      <link href="css/tour.css" rel="stylesheet" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <header role="banner">
+      <div class="main-nav" role="navigation">
+        <h1 class="name"><a href="index.html">Accessible Frog</a></h1>
+        <ul class="nav">
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+      </div>
+      <div class="banner">
+        <img src="img/no_text.jpg" alt="People clapping at an Accessible Frog concert">
+        <h1 class="banner-name">Accessible Frog</h1>
+        <h2 class="banner-subtitle">we make awesome music</h2>
+      </div>
+    </header>
+
+    <main role="main">
+      <div class="card">
+        <div class="flex">
+        <!-- The following images are decorative for this project. -->
+        <!-- Please see the project instructions for information on how to handle these. -->
+          <div id="date-header">
+            <img class="pick" src= "img/guitar-pick.svg" alt="">
+            <h1 class= "heading">Tour Dates</h1>
+            <img class="pick" src= "img/guitar-pick.svg" alt="">
+          </div>
+          <div id="date-table">
+            <table id="tour-dates">
+              <caption aria-describedby="tour-dates">Accessibe Frog tour dates</caption>                
+              <tr>
+                <th scope="col" class="th" id="date">Date</th>
+                <th scope="col" class="th" id="venue">Venue</th>
+                <th scope="col" class="th" id="location">Location</th>
+              </tr>
+              <tr>
+                <td headers="date">March 10-12</td>
+                <td headers="venue">The Warfield</td>
+                <td headers="location">San Francisco, CA</td>
+              </tr>
+              <tr>
+                <td headers="date">March 20-23</td>
+                <td headers="venue">Pepsi Center</td>
+                <td headers="location">Denver, CO</td>
+              </tr>
+              <tr>
+                <td headers="date">April 2-4</td>
+                <td headers="venue">Beacon Theatre</td>
+                <td headers="location">New York City, NY</td>
+              </tr>
+              <tr>
+                <td headers="date">April 10</td>
+                <td headers="venue">Paramount Theatre</td>
+                <td headers="location">Seattle, WA</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer role="contentinfo">
+        <div class="social-footer">
+          <ul class="social-spacing">
+            <li><a href="#" class="social"><img src= "img/twitter-64.png" alt="Follow us on Twitter"></a></li>
+            <li><a href="#" class="social"><img src= "img/spotify-64.png" alt="Listen to us on Spotify"></a></li>
+            <li><a href="#" class="social"><img src= "img/instagram-64.png" alt="Follow us on Instagram"></a></li>
+            <li><a href="#" class="social"><img src= "img/youtube-64.png" alt="Subscribe to our YouTube channel"></a></li>
+          </ul>
+        </div>  
+      <span class="copyright">Copyright 2017, Accessible Frog</span>
+    </footer>
+  </body>
+</html>

@@ -46,11 +46,17 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+.modal button {
 	letter-spacing: .13em;
 }
 
 a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
 	text-decoration: none;
 	color: white;
 }
@@ -147,6 +153,10 @@ a.svg:after {
 .copyright {
 	color: rgb(126, 131, 140);
 	font-size: .5em;
+}
+
+.letter-spacing {
+	letter-spacing: -2.5px;
 }
 
 
@@ -306,6 +316,38 @@ a.svg:after {
 	padding: 5px 10px;
 }
 
+.port-img {/*
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+	margin-top: 2em;/**/
+}
+
+/*.port-img:hover {
+	
+	cursor: pointer;
+}*/
+
+.port-img img {
+	width: 100%;
+	max-width: 320px;
+}
+
+.gray {
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+
+.gray:hover {
+	cursor: pointer;
+	-webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
 /********* CONTACT PAGE *********/
 
 .contact-bground {
@@ -324,6 +366,96 @@ a.svg:after {
 
 .contact-mail-lg {
 	display: none;
+}
+
+/********* MODAL STYLING *********/
+
+.modal {
+	color: rgb(126, 131, 140);
+}
+
+.modal-header {
+	display: flex;
+	flex-direction: column;
+} 
+
+.modal-title {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.modal-header img {
+	margin-top: 1em;
+	margin-bottom: 2em;
+} 
+
+.modal-body-desc {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.git-link {
+	margin: 0 auto;
+	width: 40%;
+	margin-top: 2em;
+	border: 1px solid #03A0F4;
+	border-radius: 3px;
+}
+
+.git-link a {
+	display: block;
+	color: #03A0F4;
+}
+
+.flex-skill {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 2em;
+}
+
+.flex-skill p {
+	width: 45%;
+	border: 1px solid grey;
+	border-radius: 3px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.css {
+	background-color: rgb(255, 195, 0);
+}
+
+.html {
+	background-color: #03A0F4;
+}
+
+.jquery {
+	background-color: rgb(2, 201, 201);
+}
+
+.js {
+	background-color: rgb(233, 161, 185);
+}
+
+.ajax {
+	background-color: rgb(220, 220, 220);
+}
+
+.sass {
+	background-color: rgb(2, 201, 201);
+}
+
+.css,
+.html,
+.jquery,
+.js,
+.ajax,
+.sass, 
+.jq-mobile {
+	color: #fff;
 }
 
 /********* MEDIA QUERIES *********/
@@ -376,12 +508,30 @@ a.svg:after {
 	.pdf-margin {
 		margin-top: 3em;
 	}
-
+/*
 	.skill {
 		margin-left: .6em;
 		margin-right: .6em;
 		width: 25%;
+	}*/
+
+	.skills-bground .container {
+		width: 100%;
 	}
+
+	.port-flex {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.port-img {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.port-img
 
 	.contact-mail-sm {
 		display: none;
@@ -446,6 +596,10 @@ a.svg:after {
 
 	.col-1 p {
 		padding-right: 2em;
+	}
+
+	.flex-skill p {
+		width: 25%;
 	}
 
 	.skill {

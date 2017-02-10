@@ -1,0 +1,40 @@
+// Descriptive color variables
+
+$white			: #fff;
+$whitey			: #FAF8F8;
+$grey			: #787878;
+$tundora		: #404040;
+$dodger-blue	: #2778F9;
+
+
+// Functional color variables
+
+$color-body-background	: $whitey;
+$color-con-background	: $white;
+
+$color-text-prim		: $tundora;
+$color-text-base		: $grey;
+$color-link-hover		: $dodger-blue;
+
+
+// Font stacks
+
+$stack-sans-serif	: sans-serif;
+$stack-roboto		: 'Roboto', $stack-sans-serif;
+$stack-orbitron		: 'Orbitron', $stack-sans-serif;
+
+
+// Font weights
+
+$fw-light		: 300;
+$fw-normal		: 500;
+$fw-heavy		: 700;
+
+
+// Font sizes
+
+$f-size-footer	: 0.85em;
+$f-size-body	: 1.1em;
+$f-size-col		: 1.3em;
+$f-size-heading	: 1.5em;
+$f-size-label	: 4em;

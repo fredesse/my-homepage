@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+
+    <header role="banner">
+      <div class="main-nav" role="navigation">
+        <h1 class="name"><a href="index.html">Accessible Frog</a></h1>
+        <ul class="nav">
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="survey.html">Survey</a></li>
+        </ul>
+      </div>
+      <div class="banner">
+        <img src="img/no_text.jpg" alt="People clapping at an Accessible Frog concert">
+        <h1 class="banner-name">Accessible Frog</h1>
+        <h2 class="banner-subtitle">we make awesome music</h2>
+      </div>
+    </header>
+
+    <main role="main">
+      <h1 class= "heading spacing2">Survey</h1>
+      <div class="card">
+        <div class="flex">
+          <div class="img-resize">
+            <img class="photo" id="lrg-photo-sizing" src= "img/concert01.jpg" alt="People at an Accesible Frog concert holding their hands up">
+          </div>  
+          <div class="container spacing1">
+            <form class="survey">
+              <fieldset>                  
+                <legend class="form-headline">Who is your favorite band member:</legend><br>
+                <input type="radio" name="res" value="John" id="john" class="spacing"><label for="john" class="checkbox">John</label><br>
+                <input type="radio" name="res" value="Hazzard" id="hazzard"><label for="hazzard" class="checkbox">Hazzard</label><br>
+                <input type="radio" name="res" value="Bob" id="bob"><label for="bob" class="checkbox">Bob</label><br>
+                <input type="radio" name="res" value="Sally" id="sally"><label for="sally" class="checkbox">Sally</label>
+                <div class="spacing">
+                  <label for="albums" class="form-headline">What is your favorite album:</label><br>
+                  <select id="albums" name="select">
+                    <option value="" disabled selected hidden>Choose Album</option>
+                    <option value="1">A Day Of Old</option>
+                    <option value="2">Diamond Fireworks</option>
+                    <option value="3">Enjoy Your Desire</option>
+                    <option value="4">Finding My Shadow</option>
+                    <option value="5">Heroic Forever</option>
+                    <option value="6">Midnight Fires</option>
+                    <option value="7">Music Of My Life</option>
+                    <option value="8">Party For An Angel</option>
+                    <option value="9">Song For Yesterday</option>
+                    <option value="10">Street Of The Rider</option>
+                    <option value="11">This Is For You</option>
+                  </select>
+                </div> 
+                <div class="spacing">
+                  <label for="fav-song" class="form-headline spacing1">What is your favorite song and why:</label><br>
+                  <textarea id="fav-song" name="fav-song"></textarea>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h1 class= "heading spacing2">Newsletter</h1>
+      <div class="card">
+        <div class="flex">
+          <div class="img-resize">
+            <img class="photo" src= "img/the_band.jpg" alt="Accessible Frog bassman Hazzard Paul Jones and drummer Bob Star playing on stage">
+          </div>  
+          <div class="container spacing1">
+            <form class="newsletter">
+              <label class="form-headline" id="signup">Sign up for our newsletter</label>
+              <div class="spacing news-col">
+                <label for="name">Name</label>
+                <input type ="text" id="name" name="user_name" required aria-describedby="help">
+                <p class="desribe" id="help">Please fill in both your first and last name</p>
+              </div>
+              <div class="news-col">
+                <label for="email">Email</label>
+                <input type ="email" id="email" name="user_email" required>
+              </div>
+              <div class="news-col">
+                <label for="retype">Retype Email</label>
+                <input type ="email" id="retype" name="user_email" required>
+              </div>  
+              <button type="submit" class="spacing" aria-describedby="signup">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="social-footer">
+          <ul class="social-spacing">
+            <li><a href="#" class="social"><img src= "img/twitter-64.png" alt="Follow us on Twitter"></a></li>
+            <li><a href="#" class="social"><img src= "img/spotify-64.png" alt="Listen to us on Spotify"></a></li>
+            <li><a href="#" class="social"><img src= "img/instagram-64.png" alt="Follow us on Instagram"></a></li>
+            <li><a href="#" class="social"><img src= "img/youtube-64.png" alt="Subscribe to our YouTube channel"></a></li>
+          </ul>
+        </div>  
+      <span class="copyright">Copyright 2017, Accessible Frog</span>
+    </footer>
+  </body>
+</html>

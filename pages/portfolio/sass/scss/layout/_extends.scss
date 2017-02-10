@@ -1,0 +1,22 @@
+
+// Center text
+
+%centered {
+	text-align: center;
+}
+
+// Uppercase text
+
+%uppercase {
+	text-transform: uppercase;
+}
+
+// Clearfix
+
+%clearfix {
+	&::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}

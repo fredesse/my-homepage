@@ -1,0 +1,121 @@
+.intro,
+.container,
+.content,
+.last-content,
+.contact,
+.skills {
+	@include padding(1em, 1em);
+}
+
+.intro {
+	@extend %centered;
+	@extend %clearfix;
+	margin-bottom: 1em;
+
+	@include tablet {
+		@include padding(2em, 2em);
+	}
+}
+
+
+.primary {
+	@include tablet {
+		width: 50%;
+		float: right;
+	}
+} 
+
+.secondary {
+	@include tablet {
+		width: 50%;
+		float: right;
+		padding-right: 1.5em;
+		font-size: $f-size-col;
+
+		p {
+			text-align: left;
+			line-height: 1.6;
+		}
+	}
+}
+
+.contact {
+	@extend %centered;
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+	h2 {
+		margin-bottom: 1.5em;
+	}
+
+	p a {
+		margin-left: 10px;
+	}
+
+	@include tablet {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.skills {
+	@extend %centered;
+	@extend %clearfix;
+	margin-top: 2em;
+	padding-bottom: 3em;
+
+	@include tablet {
+		p {
+			width: 80%;
+			margin: 0 auto;
+			margin-bottom: 3em;
+		}
+	}
+
+	@include desktop {
+		@include padding(2em, 2em);
+		width: 100%;
+		padding-bottom: 5em;
+	}
+
+	&-text {
+		@include desktop {
+			width: 50%;
+			float: left;
+			font-size: $f-size-col;
+		}
+	}
+
+	h2 {
+		padding-top: 2em;
+		padding-bottom: 1em;
+
+		@include desktop {
+			margin-bottom: 3em;
+		}
+	}
+
+	p {
+		margin-bottom: 3em;
+
+		@include desktop {
+			width: 100%;
+			text-align: left;
+			line-height: 1.6;
+			padding-right: 1.5em;
+		}
+	}
+}
+
+.scalable {
+	@include tablet {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	@include desktop {
+		width: 50%;
+		float: left;
+	}
+}
+

@@ -1,0 +1,21 @@
+.scalable {
+	overflow: hidden;
+}
+
+.scalable iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border: none;
+}
+
+.scalable .scalable-content {
+	height: 0;
+	position: relative;
+}
+
+.scalable-16-9 .scalable-content {
+	padding-bottom: 56.25%;			/* 9/16 = .5625 */ 
+}

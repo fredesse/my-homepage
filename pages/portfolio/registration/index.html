@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Code Review</title>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<h1>The Code Review</h1>
+	</header>
+	<div class="wrapper">
+		<div class="banner">
+			<h2>Signup for our newsletter</h2>
+			<p>Get the latest news on how your code is doing right in your inbox</p>
+		</div>
+		<div>
+			<form action="index.html" method="post">
+				<div class="container">
+					<fieldset class="contact">
+						<legend class="h2">Contact information</legend>
+						<div>
+							<label for="name" class="label-style">Full Name</label>
+							<input type="text" id="name" name="user_name" placeholder="Required" required>
+						</div>
+						<div>
+							<label for="email" class="label-style">Email Address</label>
+							<input type="email" id="email" name="user_email" placeholder="Required" required>
+						</div>
+						<div>
+							<label for="number" class="label-style">Phone Number</label>
+							<input type="tel" id="number" name="user_number" placeholder="+1 (234) 567-8910" minlength="10" maxlength="11">
+						</div>
+						<div>
+							<label for="address" class="label-style">Street Address</label>
+							<input type="text" id="address" name="user_address">
+						</div>
+						<div>
+							<label for="city" class="label-style">City</label>
+							<input type="text" id="city" name="user_city">
+						</div>
+						<div>
+							<label for="state" class="label-style">State</label>
+							<select id="state" name="user_state">
+								<option value="" disabled selected hidden>Choose State</option>
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</select>
+						</div>
+						<div>
+							<label for="zip" class="label-style">Zip Code</label>
+							<input type="text" id="zip" name="user_zip" pattern="[0-9]{5}" maxlength="5" title="Please enter a 5 digit zip code">
+						</div>
+					</fieldset>
+				</div>
+				<div class="container container-border">
+					<fieldset class="newsletter">
+						<legend class="h2">Newsletter</legend>
+						<div class="column">
+							<div class="col">
+								<label>Select the newsletters you would like to receive</label>
+								<input type="checkbox" id="html_news" name="user_news" value="html_news"><label for="html_news" class="radio-checkbox">HTML News</label><br>
+								<input type="checkbox" id="css_news" name="user_news" value="css_news"><label for="css_news" class="radio-checkbox">CSS News</label><br>
+								<input type="checkbox" id="js_news" name="user_news" value="js_news"><label for="js_news" class="radio-checkbox">Javascript News</label>
+								<label class="spacing">Newsletter format</label>
+								<input type="radio" id="html" name="user_newsletter" value="html_newsletter"><label for="html" class="radio-checkbox">HTML</label><br>
+								<input type="radio" id="plain" name="user_newsletter" value="plain_newsletter"><label for="plain" class="radio-checkbox">Plain text</label>
+							</div>
+							<div class="col">
+								<label class="spacing" id="col-1">What language would you prefer?</label>
+								<input type="radio" id="english" name="user_language" value="language_english"><label for="english" class="radio-checkbox">English</label><br>
+								<input type="radio" id="spanish" name="user_language" value="language_spanish"><label for="spanish" class="radio-checkbox">Spanish</label><br>
+								<input type="radio" id="japanese" name="user_language" value="language_japanese"><label for="japanese" class="radio-checkbox">Japanese</label><br>
+								<input type="radio" id="french" name="user_language" value="language_french"><label for="french" class="radio-checkbox">French</label>
+							</div>
+						</div>
+						<label for="other_topics" class="spacing">Other topics you'd like to hear about</label>
+						<textarea id="other_topics" name="user_topics" placeholder="Let us know!"></textarea>
+					</fieldset>
+					<button type="submit" id="signup">Sign Up</button>
+				</div>
+			</form>
+			<form action="index.html" method="post">	
+				<div class="container">
+					<fieldset class="account">
+						<legend class="h2">Join Us!</legend>
+						<label>For extra content, insider's specials, group events and a lot more <span id="reminder">don't forget to create an account</span></label>
+						<div class="clearfix">
+							<button type="submit" class="fb"><img src="img/f_icon.svg" alt="Facebook logo"> Connect with Facebook</button>
+							<button type="submit" class="twtr"><img src="img/twtr.svg" alt="Twitter logo"> Connect with Twitter</button>
+						</div>
+						<label id="old-fashioned">Or do it the old-fashioned way</label>
+						<div>
+							<label for="username" class="label-style">Username</label>
+							<input type="text" id="username" name="account_username" minlength="4" placeholder="Required" required>
+						</div>
+						<div>
+							<label for="account_email" class="label-style">Email</label>
+							<input type="email" id="account_email" name="account_email" placeholder="Required" required>
+						</div>
+						<div>
+							<label for="password" class="label-style">Password</label>
+							<input type="password" id="password" name="account_password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Password must contain at least one uppercase letter and number" placeholder="Required" required>
+						</div>
+						<label for="validation">Prove you are not a robot</label>
+						<div class="captcha clearfix">
+							<p id="numbers"><img src="img/5.svg" alt="The number five"><span class="plus">+</span><img src="img/3.svg" alt="The number three"><span class="plus">=</span> </p>
+							<input type="number" id="validation" name="user_robot" required>
+						</div>
+						<label class="terms">By submitting the form you agree to The Code Review's <a href="#">Terms of Service</a></label>
+					</fieldset>
+					<button type="submit">Create account</button>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<span>Copyright The Code Review</span>
+		</footer>
+	</div> <!-- End .wrapper -->
+</body>
+</html> 

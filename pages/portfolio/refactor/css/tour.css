@@ -1,0 +1,67 @@
+/* Tour page styles */
+
+pre {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading{
+  display: inline-block;
+  margin: 0;
+}
+
+.pick{
+  width: 3em;
+  height: 3em;
+  padding: 10px;
+}
+
+.flex {
+	text-align: center;
+}
+
+#date-table {
+	margin-top: 3em;
+	text-align: left;
+}
+
+#date-table table {
+	margin: 0 auto;
+}
+
+caption {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #FFC60A;
+	padding-bottom: 1.5em;
+}
+
+.th {
+	border-bottom: 3px solid #00D95F;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+td {
+	border-bottom: 1px solid #00D95F;
+	padding-top: .7em;
+	padding-bottom: .7em;
+	padding-right: 1em;
+}
+
+@media screen and (min-width: 840px) {
+
+	.flex {
+		flex-direction: column;
+	}
+
+	.card img {
+		width: 4em;
+		margin-left: 10px;
+	}
+
+	table {
+	width: 80%;
+	max-width: 800px;
+	}
+
+}

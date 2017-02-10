@@ -1,0 +1,351 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #00D95F;
+  background: #2d2b30;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  display: flex;
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin-left: auto;
+  padding: 0;
+}
+
+.name {
+  display: block;
+  margin-right: auto;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 1em;
+  -webkit-transition: all .9s;
+  -moz-transition: all .9s;
+  -ms-transition: all .9s;
+  transition: all .9s;
+}
+
+.name:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.nav li {
+  padding: 0 .8em;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav li:hover {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.nav a:hover,
+.buy:hover a {
+  color: #2d2b30;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner img {
+  background: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.banner-name {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 80px;
+  color: #2d2b30;
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+
+.banner-subtitle {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 157px;
+  color: #FF0000;
+  font-size: 2em;
+}
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-weight: 300;
+}
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #781125
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 0 0;
+  text-align: left;
+  border-top: 4px solid #FF0000;
+  clear: both;
+}
+.card:hover {
+  border-color: #FFC60A;
+}
+
+
+.photo{
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+
+.information{
+  width: 100%;
+  text-align: center;
+}
+
+.heading{
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #FFC60A;
+  margin-top: 10px;
+}
+
+.buy {
+  border: 3px solid #E1E3E1;
+  border-radius: 5px;
+  padding: 5px 7px;
+  margin-top: 1.5em;
+  display: inline-block;
+}
+
+.buy:hover {
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.buy:hover,
+.social:hover,
+.buy a:hover,
+.newsletter:hover button {
+  cursor: pointer;
+}
+
+
+/* Footer styles */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 20px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.social-footer li {
+  margin-top: 1em;
+}
+
+.social img {
+  width: 64px;
+  height: 64px;
+}
+
+.video {
+  background: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .name {
+    padding-left: 2em;
+  }
+
+  .banner img {
+    min-height: 470px;
+  }
+
+  .banner-name {
+    top: 120px;
+    font-size: 4em;
+  }
+
+  .banner-subtitle {
+    top: 230px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  .nav li {
+    padding: 0;
+  }
+
+  .nav li a {
+    display: block;
+    width: 100px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  .card{
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .img-resize {
+    width: 60%;
+    margin-right: 2em;
+  }
+
+  .card img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo{
+    width: 30%;
+    margin: 20px 30px;
+  }
+
+  .container {
+    margin-left: 10px;
+  }
+
+  #lrg-photo-sizing {
+    max-height: 500px;
+  }
+
+  .information{
+    text-align: left;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 1em auto;
+    padding: 0;
+  }
+
+  .social-footer {/*
+    flex-direction: row;
+    justify-content: space-around;*/
+    width: 50%;
+    margin: 4em auto;
+  }
+
+  .social-spacing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social img {
+    -webkit-transition: all 0.5s;
+  }
+
+  .social:hover img {
+    -webkit-transform: scale(1.25);
+  }
+
+  footer span {
+    margin-top: 2em;
+  }
+}
