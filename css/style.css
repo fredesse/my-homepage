@@ -176,6 +176,10 @@ a.svg:after {
     color: #fff;
 }
 
+.slick-track {
+	margin-bottom: 2em;
+}
+
 .center {
 	display: none;
 }
@@ -398,7 +402,7 @@ a.svg:after {
 
 .git-link {
 	margin: 0 auto;
-	width: 40%;
+	width: 90%;
 	margin-top: 2em;
 	border: 1px solid #03A0F4;
 	border-radius: 3px;
@@ -531,7 +535,9 @@ a.svg:after {
 		margin-right: 1em;
 	}
 
-	.port-img
+	.git-link {
+		width: 60%;
+	}	
 
 	.contact-mail-sm {
 		display: none;
@@ -605,6 +611,10 @@ a.svg:after {
 	.skill {
 		width: 20%;
 		max-width: 180px;
+	}
+
+	.git-link {
+		width: 45%;
 	}
 
 	.contact-mail-lg,

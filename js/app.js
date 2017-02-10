@@ -11,9 +11,6 @@
 
 
 
-
-
-
 ///////////// Slider
 
 /*For home page*/
@@ -59,3 +56,5 @@ $('.center').slick({
     }
   ]
 });
+
+
